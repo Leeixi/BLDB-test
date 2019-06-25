@@ -1,0 +1,24 @@
+{
+  "name": "configurateionTS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "ts-node ./src/server.ts",
+    "build": "npm run clean && tsc",
+    "start": "node ./dist/server.js",
+    "clean": "rm -rf ./dist",
+    "test":  "jshint app.ts server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.2",
+    "jshint": "^2.6.0"
+  }
+}
