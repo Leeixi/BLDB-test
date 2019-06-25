@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "ts-node ./src/server.ts",
-    "build": "npm run clean && tsc",
+    "build": "npm update && npm run clean && tsc",
     "start": "node ./dist/server.js",
     "clean": "rm -rf ./dist",
     "test":  "jshint app.ts server.ts"
