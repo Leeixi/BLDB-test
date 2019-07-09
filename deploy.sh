@@ -8,5 +8,8 @@ git push deploy master
 
 ssh root@$IP -p $PORT <<EOF
 	echo "test3" >> test3.txt
+        docker build -t "bldb-test" .
+	docker run -d --name "bldb-test" -p 9000:9000 bldb-test
+	docker ps -a > dockerps.txt
 EOF
 
