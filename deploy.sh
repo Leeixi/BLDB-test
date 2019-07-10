@@ -8,5 +8,6 @@ git push deploy master
 
 ssh root@$IP -p $PORT <<EOF
 	echo "test3" >> test3.txt
+	
 EOF
 
